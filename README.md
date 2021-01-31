@@ -7,7 +7,7 @@ This is a reliable note-taking app that allows the user to create, save, and vie
 
 ## Table of Contents
   - [Installation](#installation)
-  - [Deplopyment](#deployment)
+  - [Deployment](#deployment)
   - [Usage](#usage)
   - [License](#license)
   - [Next Steps](#next-steps)
