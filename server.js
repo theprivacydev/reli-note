@@ -1,16 +1,35 @@
-// add express server
+// Add express server
+const express = require('express');
 
-// create express app
+// Create express app
+const app = express();
 
-// include midleware to parse JSON
+// Define port
+const PORT = process.env.PORT || 3000;
+
+const path = require('path');
+
+// Middleware to parse JSON
+const bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({extended:true}));
+  
+
+app.post("/", function(req, res){
+  let firstName = req.body.fNAME;
+  
+});
 
 // html routes (routes that will serve websites)
-// define landing page route
-    //use index.html inside public folder (how to pack all the js and css dependencies into html hint: import)
+// Landing page route (how to pack all the js and css dependencies into html hint: import)
+app.use( function (req, res) {
+    res.sendFile(path.join( __dirname + '/public/index.html' ) );
+});
 
-
-// note page route
-    //use notes.jtml inside public folder
+// Note page route
+app.get('/notes', function (req, res) {
+    res.sendFile(path.join( __dirname + 'public/notes.html' ) );
+});
 
 // API routes
 
@@ -29,4 +48,7 @@
 
 
 
-// invoke listen function on express app
+// Invoke listen function on express app
+app.listen( PORT, function(){
+    console.log("App listening on PORT: ", PORT);
+});
