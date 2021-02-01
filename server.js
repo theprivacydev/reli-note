@@ -13,6 +13,7 @@ const path = require('path');
 // Require database
 const database = require('./db/db.json');
 
+
 // Middleware to parse JSON
 const bodyParser = require("body-parser");
 
@@ -22,7 +23,7 @@ app.use(bodyParser.json());
   
 
 // Html routes 
-// Landing page route (how to pack all the js and css dependencies into html hint: import)
+// Landing page route 
 app.get('/', function (req, res) {
     res.sendFile(path.join( __dirname + '/public/index.html' ) );
 });
@@ -34,8 +35,8 @@ app.get('/notes', function (req, res) {
 
 app.use(function(req, res){
     res.setHeader('Content-Type', 'text/plain')
-    res.write('you posted:\n')
-    res.end(JSON.stringify(req.body, null, 2))
+    res.write('you posted:\n', database)
+    res.send()
 });
 
 // API routes
