@@ -20,31 +20,11 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(bodyParser.json());
-  
 
-// Html routes 
-// Landing page route 
-app.get('/', function (req, res) {
-    res.sendFile(path.join( __dirname + '/public/index.html' ) );
-});
 
-// Note page
-app.get('/notes', function (req, res) {
-    res.sendFile(path.join( __dirname + '/public/notes.html' ) );
-});
-
-app.use(function(req, res){
-    res.setHeader('Content-Type', 'text/plain')
-    res.write('you posted:\n', database)
-    res.send()
-});
-
-// API routes
-app.get('/api/notes', function(req, res) {
-    res.json(database);
-
-});
-
+// Require html & api routes
+require('./routing/html-routes')(app);
+require('./routing/api-routes')(app);
 
 // post route to save note
     // ADD the new note to the db.son (figure out how to parse)
