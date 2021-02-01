@@ -30,12 +30,8 @@ app.use(bodyParser.json());
 require('./routing/api-routes')(app);
 require('./routing/html-routes')(app);
 
-// post route to save note
-    // ADD the new note to the db.son (figure out how to parse)
-    app.post("/api/notes", function(req, res){
-        let firstName = req.body.fNAME;
-        
-      });
+
+
 
 // get route to get all notes
 
