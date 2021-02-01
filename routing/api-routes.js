@@ -9,11 +9,9 @@ module.exports = function(app) {
     
     });
 
-
     app.post('/api/notes', function(req, res){
         const note = req.body;
         database.push(note);
-        res.json(database);
     });
 
 }

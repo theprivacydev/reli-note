@@ -26,9 +26,9 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 
-// Require html & api routes
-require('./routing/html-routes')(app);
+// Require api and html routes
 require('./routing/api-routes')(app);
+require('./routing/html-routes')(app);
 
 // post route to save note
     // ADD the new note to the db.son (figure out how to parse)
