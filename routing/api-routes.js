@@ -1,4 +1,5 @@
 const path = require('path');
+const database = require('../db/db.json')
 
 module.exports = function(app) {
     
