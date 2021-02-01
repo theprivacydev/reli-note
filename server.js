@@ -13,6 +13,10 @@ const path = require('path');
 // Require database
 const database = require('./db/db.json');
 
+//Require fs
+const fs = require('fs');
+
+
 
 // Middleware to parse JSON
 const bodyParser = require("body-parser");
@@ -28,7 +32,7 @@ require('./routing/api-routes')(app);
 
 // post route to save note
     // ADD the new note to the db.son (figure out how to parse)
-    app.post("/", function(req, res){
+    app.post("/api/notes", function(req, res){
         let firstName = req.body.fNAME;
         
       });
@@ -38,9 +42,6 @@ require('./routing/api-routes')(app);
 // put route to update a note (app.put())
 
 // delete route to delete a note
-
-
-
 
 
 
