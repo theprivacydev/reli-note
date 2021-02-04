@@ -7,14 +7,9 @@ const app = express();
 // Define port
 const PORT = process.env.PORT || 3000;
 
+app.use(express.urlencoded({extended:true}));
 
-
-// Middleware to parse JSON
-const bodyParser = require("body-parser");
-
-app.use(bodyParser.urlencoded({extended:true}));
-
-app.use(bodyParser.json());
+app.use(express.json());
 
 
 // Require api and html routes
@@ -22,7 +17,7 @@ require('./routing/api-routes')(app);
 require('./routing/html-routes')(app);
 
 // Import css and js files
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // get route to get all notes
 
