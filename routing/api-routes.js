@@ -5,6 +5,7 @@ const generateUniqueId = require('generate-unique-id');
 module.exports = function(app) {
 
         fs.readFile("./db/db.json", function(err, data) {
+            if (err) throw err
 
             // get notes
             app.get('/api/notes', function(req, res) {
@@ -15,7 +16,7 @@ module.exports = function(app) {
                 const note = {
                     title: req.body.title,
                     text: req.body.title
-                }
+                };
                 console.log('inside post, our note: ', note);
                 res.json(data);
                 console.log('inside post, our database: ', database);
@@ -27,14 +28,13 @@ module.exports = function(app) {
                 // res.status(201)
                 // res.json(true);
                 // console.log(err);
-
             // End app.post
             });
 
 
 
             // End readFile
-          });
+        });
 // End export
 }
 
