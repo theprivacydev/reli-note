@@ -9,6 +9,7 @@ This is a reliable note-taking app that allows the user to create, save, and vie
   - [Installation](#installation)
   - [Deployment](#deployment)
   - [Usage](#usage)
+  - [Technologies](#technologies)
   - [License](#license)
   - [Next Steps](#next-steps)
   - [Questions](#questions)
@@ -26,6 +27,14 @@ Simply click the "Get Started" button to begin on the deployed application. User
 
 ![home page screenshot](./public/assets/images/reli-note-home.png)
 ![notes page screenshot](./public/assets/images/reli-note-notes.png)
+
+## Technologies
+* HTML5
+* CSS3
+* JavaScript
+* Node.js
+* Express.js
+* Heroku
 
 ## License
 
