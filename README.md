@@ -43,4 +43,4 @@ Simply click the "Get Started" button to begin on the deployed application. User
 For additional questions please contact:
 * Jayme Mizelle
 * Email: jayme.coder@gmail.com
-* https://github.com/jaymemizelle/
+* GitHub: https://github.com/jaymemizelle/
