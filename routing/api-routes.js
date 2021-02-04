@@ -7,7 +7,7 @@ require('./html-routes');
 
 module.exports = function(app) {
 
-    fs.readFile("db/db.json", 'utf8', function(err, data) {
+    fs.readFile('db/db.json', 'utf8', function(err, data) {
         if (err) throw err;
         let notes = JSON.parse(data);
     
@@ -39,17 +39,17 @@ module.exports = function(app) {
 
         app.delete('/api/notes/:id', function(req, res) {
             notes.splice(req.params.id, 1);
-            noteRevision(notes)
+            noteRevision(notes);
             res.json(notes);
         });
         
         // End readFile
     });
 
-    function noteRevision (notes) {
+    function noteRevision(notes) {
 
         fs.writeFile('db/db.json', JSON.stringify(notes), (err) => {
-            if (err) throw err
+            if (err) throw err;
             return true;
         });
 
