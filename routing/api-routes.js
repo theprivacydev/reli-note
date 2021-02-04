@@ -48,7 +48,7 @@ module.exports = function(app) {
 
     function noteRevision(notes) {
 
-        fs.writeFile('db/db.json', JSON.stringify(notes), (err) => {
+        fs.writeFile('db/db.json', JSON.stringify(notes), function(err) {
             if (err) throw err;
             return true;
         });

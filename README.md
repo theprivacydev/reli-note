@@ -23,6 +23,7 @@ This is a reliable note-taking app that allows the user to create, save, and vie
 Click the "Get Started" button to begin.
 
 ![home page screenshot](./public/assets/images/reli-note-home.png)
+![notes page screenshot](./public/assets/images/reli-note-notes.png)
 
 ## License
 
