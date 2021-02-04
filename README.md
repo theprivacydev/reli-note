@@ -15,12 +15,14 @@ This is a reliable note-taking app that allows the user to create, save, and vie
 
 
 ## Installation
-``` This is a deployed application that can be used by clicking on the deployed application link. ```
+``` This is a deployed application that can be used by clicking on the deployed application link (in the next section). ```
 
 ## Deployment
+* Technology used: Heroku
+* Deployed Application URL: https://agile-springs-94142.herokuapp.com/
 
 ## Usage
-Click the "Get Started" button to begin.
+Simply click the "Get Started" button to begin on the deployed application. User can choose to view notes in json format on the site by going adding /api/notes to the homepage url.
 
 ![home page screenshot](./public/assets/images/reli-note-home.png)
 ![notes page screenshot](./public/assets/images/reli-note-notes.png)
@@ -34,7 +36,8 @@ Click the "Get Started" button to begin.
   ![License: MIT](https://img.shields.io/badge/License-MIT-9cf)
 
 ## Next Steps
-* Edit CSS 
+* Edit CSS
+* Fix functionality of delete note feature
 
 ## Questions
 For additional questions please contact:
