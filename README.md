@@ -46,7 +46,6 @@ Simply click the "Get Started" button to begin on the deployed application. User
 
 ## Next Steps
 * Edit CSS
-* Fix functionality of delete note feature
 
 ## Questions
 For additional questions please contact:

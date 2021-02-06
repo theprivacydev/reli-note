@@ -38,7 +38,7 @@ module.exports = function(app) {
         });
 
         app.delete('/api/notes/:id', function(req, res) {
-            notes.splice(req.params.id, 1);
+            notes = notes.filter( note => note.id !== req.params.id );
             noteRevision(notes);
             res.json(notes);
         });
