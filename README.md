@@ -49,6 +49,6 @@ Simply click the "Get Started" button to begin on the deployed application. User
 
 ## Questions
 For additional questions please contact:
-* Jayme Mizelle
-* Email: jayme.coder@gmail.com
-* GitHub: https://github.com/jaymemizelle/
+* The Privacy Dev
+* Email: theprivacydev@protonmail.com
+* GitHub: https://github.com/theprivacydev/
